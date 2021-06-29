@@ -1,11 +1,39 @@
 .small-txt {
   font-size: 0.88rem;
   font-weight: bold;
+  color: white;
+}
+
+.big-txt-dark,
+.big-txt-light {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.big-txt-dark {
+  color: #29221b;
+}
+
+.big-txt-light {
+  color: white;
+}
+
+.big-txt-dark {
+  color: #29221b;
+}
+
+.med-txt-light {
+  color: #cfcfcf;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 69.4rem) {
   .small-txt {
     font-size: 1.25rem;
+  }
+  .big-txt-dark,
+  .big-txt-light {
+    font-size: 3.125rem;
   }
 }
 
@@ -14,6 +42,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -59,6 +91,43 @@ header a {
 
 header a:hover {
   color: #00aaff;
+}
+
+main {
+  background-image: url("/imgs/caspar-camille-rubin-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 45rem;
+  position: relative;
+  z-index: 0;
+}
+
+main .container .overlay {
+  position: relative;
+  text-align: center;
+  padding: 11.25rem 1.25rem 0;
+}
+
+main .container .overlay .btn {
+  padding: 10px 35px;
+  background-color: #00aaff;
+  color: white;
+  font-weight: 300;
+  border-radius: 12px;
+  top: 2.2rem;
+  position: relative;
+}
+
+main .container .film-layer {
+  position: absolute;
+  background-color: #222f2c;
+  top: 0;
+  left: 0;
+  min-height: 45rem;
+  width: 100%;
+  opacity: 0.65;
+  z-index: 0;
 }
 
 @media (min-width: 69.4rem) {

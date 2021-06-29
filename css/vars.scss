@@ -1,8 +1,9 @@
 $header-clr: #222f2c;
 $main-accent: #00aaff;
-$big-txt-light: #fafafa;
+$big-txt-light: white;
 $big-txt-dark: #29221b;
 $med-txt-light: #cfcfcf;
+$film-layer: #222f2c;
 $b-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 // Text-styles
@@ -15,7 +16,7 @@ $b-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .big-txt-dark,
 .big-txt-light {
-  font-weight: light;
+  font-weight: 300;
   font-size: 2.5rem;
 }
 .big-txt-dark {

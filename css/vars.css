@@ -6,7 +6,7 @@
 
 .big-txt-dark,
 .big-txt-light {
-  font-weight: light;
+  font-weight: 300;
   font-size: 2.5rem;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .big-txt-light {
-  color: #fafafa;
+  color: white;
 }
 
 .big-txt-dark {
