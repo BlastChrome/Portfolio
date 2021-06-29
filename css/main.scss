@@ -1,0 +1,55 @@
+// Mobile section
+// resets
+@import "./vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 69.4rem;
+}
+
+// nav
+header {
+  background-color: $header-clr;
+  box-shadow: $b-shadow;
+  height: 4rem;
+  display: flex;
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s ease-in;
+    &:hover {
+      color: $main-accent;
+    }
+  }
+}
+
+// Desktop styling 1110px
+@media (min-width: 69.4rem) {
+  header {
+    height: 5rem;
+
+    .container {
+      padding: 0;
+    }
+  }
+}

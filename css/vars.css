@@ -1,0 +1,39 @@
+.small-txt {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: white;
+}
+
+.big-txt-dark,
+.big-txt-light {
+  font-weight: light;
+  font-size: 2.5rem;
+}
+
+.big-txt-dark {
+  color: #29221b;
+}
+
+.big-txt-light {
+  color: #fafafa;
+}
+
+.big-txt-dark {
+  color: #29221b;
+}
+
+.med-txt-light {
+  color: #cfcfcf;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 69.4rem) {
+  .small-txt {
+    font-size: 1.25rem;
+  }
+  .big-txt-dark,
+  .big-txt-light {
+    font-size: 3.125rem;
+  }
+}
+/*# sourceMappingURL=vars.css.map */

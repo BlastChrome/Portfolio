@@ -1,0 +1,45 @@
+$header-clr: #222f2c;
+$main-accent: #00aaff;
+$big-txt-light: #fafafa;
+$big-txt-dark: #29221b;
+$med-txt-light: #cfcfcf;
+$b-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// Text-styles
+
+.small-txt {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: white;
+}
+
+.big-txt-dark,
+.big-txt-light {
+  font-weight: light;
+  font-size: 2.5rem;
+}
+.big-txt-dark {
+  color: $big-txt-dark;
+}
+.big-txt-light {
+  color: $big-txt-light;
+}
+
+.big-txt-dark {
+  color: $big-txt-dark;
+}
+
+.med-txt-light {
+  color: $med-txt-light;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 69.4rem) {
+  .small-txt {
+    font-size: 1.25rem;
+  }
+  .big-txt-dark,
+  .big-txt-light {
+    font-size: 3.125rem;
+  }
+}
