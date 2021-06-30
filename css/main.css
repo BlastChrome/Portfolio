@@ -98,7 +98,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 45rem;
+  min-height: 40rem;
   position: relative;
   z-index: 0;
 }
@@ -110,11 +110,11 @@ main .container .overlay {
 }
 
 main .container .overlay .btn {
-  padding: 10px 35px;
+  padding: 0.06rem 3.48rem;
   background-color: #00aaff;
   color: white;
-  font-weight: 300;
-  border-radius: 12px;
+  font-weight: 200;
+  border-radius: 0.75rem;
   top: 2.2rem;
   position: relative;
 }
@@ -124,10 +124,37 @@ main .container .film-layer {
   background-color: #222f2c;
   top: 0;
   left: 0;
-  min-height: 45rem;
+  min-height: 40rem;
   width: 100%;
   opacity: 0.65;
   z-index: 0;
+}
+
+.section-a {
+  text-align: center;
+}
+
+.section-a .skills-header {
+  padding-top: 7.8rem;
+  border-bottom: 0.25rem solid #00aaff;
+  display: inline-block;
+  margin: 1.25rem;
+}
+
+.section-a .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2.5rem 0;
+  margin-top: 2.5rem;
+}
+
+.section-a .icon-container img {
+  width: 10.62rem;
 }
 
 @media (min-width: 69.4rem) {
