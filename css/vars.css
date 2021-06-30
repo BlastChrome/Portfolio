@@ -1,3 +1,7 @@
+.center {
+  text-align: center;
+}
+
 .small-txt {
   font-size: 0.88rem;
   font-weight: bold;
