@@ -35,10 +35,31 @@ body {
 }
 
 // nav
-header,
-footer {
+
+header {
   background-color: $header-clr;
   box-shadow: $b-shadow;
+}
+
+footer {
+  text-align: center;
+  background-color: $footer-clr;
+  height: 5rem;
+  padding: 1.25rem 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    a {
+      color: $big-txt-dark;
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+header {
   height: 4rem;
   display: flex;
 
@@ -119,6 +140,7 @@ main {
   margin: 6rem 0 5rem;
   p {
     color: $big-txt-dark;
+    margin-bottom: 0.85rem;
   }
   .container {
     text-align: center;
@@ -142,7 +164,8 @@ main {
   padding: 5rem 0 5rem;
   margin: 12rem 0 17rem;
   .big-txt-light {
-    padding: 0;
+    padding: 0 0;
+    margin: 0 0 3rem;
   }
   .container {
     padding: 0rem 1.25rem 0;
@@ -152,10 +175,10 @@ main {
   text-align: center;
   color: #fff;
   .about-txt {
-    text-align: left;
+    text-align: center;
     font-size: 1.375rem;
-    font-weight: 100;
-    max-width: 52rem;
+    font-weight: lighter;
+    max-width: 61rem;
     line-height: 2.5rem;
   }
   a {
@@ -172,6 +195,19 @@ main {
 
     .container {
       padding: 0;
+    }
+  }
+
+  .section-c {
+    margin: 12rem 0 21rem;
+    .container {
+      .about-txt {
+        text-align: left;
+        font-size: 2rem;
+        line-height: 150%;
+        font-weight: lighter;
+        max-width: 51rem;
+      }
     }
   }
 }

@@ -1,10 +1,13 @@
 $header-clr: #222f2c;
+$footer-clr: #e7e7e7;
+
 $main-accent: #00aaff;
 $big-txt-light: white;
 $big-txt-dark: #29221b;
 $med-txt-light: #cfcfcf;
 $film-layer: #222f2c;
 $b-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$b-shadow-2: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 // spacing
 .center {
@@ -13,10 +16,17 @@ $b-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 // Text-styles
 
-.small-txt {
+.small-txt,
+.small-txt-dark {
   font-size: 0.88rem;
   font-weight: bold;
+}
+
+.small-txt {
   color: white;
+}
+.small-txt-dark {
+  color: $big-txt-dark;
 }
 
 .big-txt-dark,

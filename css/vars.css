@@ -2,10 +2,18 @@
   text-align: center;
 }
 
-.small-txt {
+.small-txt,
+.small-txt-dark {
   font-size: 0.88rem;
   font-weight: bold;
+}
+
+.small-txt {
   color: white;
+}
+
+.small-txt-dark {
+  color: #29221b;
 }
 
 .big-txt-dark,
