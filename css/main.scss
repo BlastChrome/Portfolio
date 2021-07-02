@@ -75,7 +75,7 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.1s ease-in;
+    transition: all 0.1s ease-in;
     &:hover {
       color: $main-accent;
     }
@@ -154,8 +154,12 @@ main {
     font-size: 1.25rem;
 
     img {
+      transition: transform 0.1s ease-in-out;
       max-width: 22.2rem;
       box-shadow: $b-shadow;
+      &:hover {
+        transform: scale(1.06);
+      }
     }
   }
 }
@@ -188,6 +192,56 @@ main {
   }
 }
 
+.contact {
+  .container {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .top-section *,
+    .bottom-section * {
+      display: block;
+    }
+    .top-section {
+      margin: 5.5rem 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .bottom-section {
+      margin-top: 2.85rem;
+    }
+    .input-container {
+      font-size: 1.25rem;
+      margin: 0 1rem;
+      & label,
+      & input {
+        color: #868686;
+        font-weight: 100;
+      }
+      & input,
+      & textarea {
+        min-width: 19rem;
+      }
+      & textarea {
+        width: 100%;
+      }
+      & input {
+        padding: 0.45rem 0.5rem;
+      }
+      & .special-btn {
+        margin: 1.2rem 0 5.45rem;
+        max-width: 4.6rem;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: $main-accent;
+        color: #fff;
+      }
+    }
+  }
+}
+
 // Desktop styling 1110px
 @media (min-width: 69.4rem) {
   header {
@@ -195,6 +249,14 @@ main {
 
     .container {
       padding: 0;
+    }
+  }
+
+  .section-a {
+    .icon-container {
+      img {
+        width: 9.62rem;
+      }
     }
   }
 
@@ -207,6 +269,53 @@ main {
         line-height: 150%;
         font-weight: lighter;
         max-width: 51rem;
+      }
+    }
+  }
+
+  .contact {
+    .container {
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .top-section *,
+      .bottom-section * {
+        display: block;
+      }
+      .top-section {
+        margin: 5.5rem 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .input-container {
+        font-size: 1.25rem;
+        margin: 0 1rem;
+        & label,
+        & input {
+          color: #868686;
+          font-weight: 100;
+        }
+        & input,
+        & textarea {
+          width: 28rem;
+        }
+        & textarea {
+          width: 100%;
+        }
+        & input {
+          padding: 0.45rem 0.5rem;
+        }
+        & .special-btn {
+          margin: 1.2rem 0 5.45rem;
+          max-width: 1.6rem;
+          border-radius: 0.25rem;
+          border: none;
+          background-color: $main-accent;
+          color: #fff;
+        }
       }
     }
   }

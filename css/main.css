@@ -139,8 +139,8 @@ header a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  -webkit-transition: color 0.1s ease-in;
-  transition: color 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 header a:hover {
@@ -232,9 +232,18 @@ main .container .film-layer {
 }
 
 .section-b .thumbnail-container img {
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   max-width: 22.2rem;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-b .thumbnail-container img:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
 .section-c {
@@ -271,12 +280,87 @@ main .container .film-layer {
   height: 1px;
 }
 
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .top-section *,
+.contact .container .bottom-section * {
+  display: block;
+}
+
+.contact .container .top-section {
+  margin: 5.5rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .container .bottom-section {
+  margin-top: 2.85rem;
+}
+
+.contact .container .input-container {
+  font-size: 1.25rem;
+  margin: 0 1rem;
+}
+
+.contact .container .input-container label,
+.contact .container .input-container input {
+  color: #868686;
+  font-weight: 100;
+}
+
+.contact .container .input-container input,
+.contact .container .input-container textarea {
+  min-width: 19rem;
+}
+
+.contact .container .input-container textarea {
+  width: 100%;
+}
+
+.contact .container .input-container input {
+  padding: 0.45rem 0.5rem;
+}
+
+.contact .container .input-container .special-btn {
+  margin: 1.2rem 0 5.45rem;
+  max-width: 4.6rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #00aaff;
+  color: #fff;
+}
+
 @media (min-width: 69.4rem) {
   header {
     height: 5rem;
   }
   header .container {
     padding: 0;
+  }
+  .section-a .icon-container img {
+    width: 9.62rem;
   }
   .section-c {
     margin: 12rem 0 21rem;
@@ -287,6 +371,65 @@ main .container .film-layer {
     line-height: 150%;
     font-weight: lighter;
     max-width: 51rem;
+  }
+  .contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .container .top-section *,
+  .contact .container .bottom-section * {
+    display: block;
+  }
+  .contact .container .top-section {
+    margin: 5.5rem 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact .container .input-container {
+    font-size: 1.25rem;
+    margin: 0 1rem;
+  }
+  .contact .container .input-container label,
+  .contact .container .input-container input {
+    color: #868686;
+    font-weight: 100;
+  }
+  .contact .container .input-container input,
+  .contact .container .input-container textarea {
+    width: 28rem;
+  }
+  .contact .container .input-container textarea {
+    width: 100%;
+  }
+  .contact .container .input-container input {
+    padding: 0.45rem 0.5rem;
+  }
+  .contact .container .input-container .special-btn {
+    margin: 1.2rem 0 5.45rem;
+    max-width: 1.6rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #00aaff;
+    color: #fff;
   }
 }
 /*# sourceMappingURL=main.css.map */
