@@ -387,6 +387,9 @@ main .container .film-layer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .contact .container .captcha {
+    margin-top: 0.75rem;
+  }
   .contact .container .top-section *,
   .contact .container .bottom-section * {
     display: block;

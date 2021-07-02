@@ -26,11 +26,11 @@
                     <div class="top-section">
                         <div class="input-container">
                             <label for="name">Name: </label> 
-                            <input type="text">
+                            <input type="text" name="name">
                         </div>
                         <div class="input-container">
                             <label for="email">Email: </label> 
-                            <input type="email">
+                            <input type="email" name="email">
                         </div>
                     </div> 
                     <div class="bottom-section"> 
@@ -38,11 +38,10 @@
                             <label for="message">Message:</label>
                             <textarea name="message" id="" cols="30" rows="10"></textarea> 
                         </div> 
-                        <div class="input-container">
-                            <div data-netlify-recaptcha="true"></div>
+                        <div class="input-container captcha">
+                            <div class="captcha" data-netlify-recaptcha="true"></div>
                         </div>
                         <div class="input-container">
-                            
                             <input type="submit" class="special-btn">
                         </div>
                     </div>

@@ -275,6 +275,9 @@ main {
 
   .contact {
     .container {
+      .captcha {
+        margin-top: 0.75rem;
+      }
       // background-color: red;
       display: flex;
       flex-direction: column;
