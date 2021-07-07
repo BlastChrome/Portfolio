@@ -157,6 +157,15 @@ main {
   z-index: 0;
 }
 
+main .med-txt-light {
+  margin-bottom: 1rem;
+}
+
+main .txt-dec {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
 main .container .overlay {
   position: relative;
   text-align: center;

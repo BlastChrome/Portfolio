@@ -91,6 +91,15 @@ main {
   position: relative;
   z-index: 0;
 
+  .med-txt-light {
+    margin-bottom: 1rem;
+  }
+
+  .txt-dec {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
   .container {
     .overlay {
       position: relative;
