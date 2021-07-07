@@ -195,6 +195,11 @@ main .container .film-layer {
 
 .section-a {
   text-align: center;
+  margin-bottom: 8rem;
+}
+
+.section-a p {
+  color: #00aaff;
 }
 
 .section-a .icon-container {
@@ -205,12 +210,19 @@ main .container .film-layer {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 2.5rem 0;
   margin-top: 2.5rem;
 }
 
 .section-a .icon-container img {
   width: 7.62rem;
+}
+
+.section-a .icon-container .icon-container {
+  display: block;
 }
 
 .section-b {
