@@ -215,10 +215,11 @@ main .container .film-layer {
           align-items: flex-start;
   gap: 2.5rem 0;
   margin-top: 2.5rem;
+  font-weight: bold;
 }
 
 .section-a .icon-container img {
-  width: 7.62rem;
+  max-width: 6.95rem;
 }
 
 .section-a .icon-container .icon-container {
@@ -301,6 +302,15 @@ main .container .film-layer {
   height: 1px;
 }
 
+footer .container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .contact .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,7 +391,7 @@ main .container .film-layer {
     padding: 0;
   }
   .section-a .icon-container img {
-    width: 9.62rem;
+    max-width: 7.62rem;
   }
   .section-c {
     margin: 12rem 0 21rem;
@@ -454,6 +464,9 @@ main .container .film-layer {
     border: none;
     background-color: #00aaff;
     color: #fff;
+  }
+  footer .container {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
